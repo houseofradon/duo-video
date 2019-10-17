@@ -1,7 +1,6 @@
 {
   "name": "duo-video",
-  "version": "1.0.3",
-  "repository": "https://github.com/houseofradon/duo-video.git",
+  "version": "1.0.2",
   "description": "A react component for playing two videos synced. Finally rendered in webgl with an option to have an audiofile playing in sync aswell.",
   "main": "build/index.js",
   "scripts": {
