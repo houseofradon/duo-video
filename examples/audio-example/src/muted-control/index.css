@@ -1,0 +1,20 @@
+.muted-control {
+  position: absolute;
+  bottom: 96px;
+  left: 80px;
+  width: 40px;
+}
+
+.muted-control > button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  width: 100%;
+  padding: 0;
+}
+
+.muted-control > button > img {
+  width: 100%;
+}

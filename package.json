@@ -1,0 +1,20 @@
+{
+  "name": "duo-video-workspace",
+  "version": "1.0.0",
+  "description": "A react component for playing two videos synced. Finally rendered in webgl with an option to have an audiofile playing in sync aswell.",
+  "private": true,
+  "scripts": {
+    "start": "lerna run --parallel start --scope duo-video",
+    "build": "lerna --stream --concurrency 1 run build",
+    "test": "lerna run --parallel test --"
+  },
+  "dependencies": {
+    "lerna": "^3.8.5"
+  },
+  "author": "christianperss",
+  "license": "MIT",
+  "workspaces": [
+    "packages/duo-video",
+    "examples/audio-example"
+  ]
+}

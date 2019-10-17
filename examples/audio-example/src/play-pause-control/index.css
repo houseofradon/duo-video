@@ -1,0 +1,17 @@
+.play-pause-control {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+}
+
+.play-pause-control.hide {
+  opacity: 0.2;
+}
+
+.play-pause-control > button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}

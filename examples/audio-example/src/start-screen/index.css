@@ -1,0 +1,37 @@
+.start-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.start-screen.visible {
+  display: flex;
+}
+
+.start-screen > .center-container {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.start-screen > .center-container > button {
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.start-screen > .center-container > button.visible {
+  display: block;
+}

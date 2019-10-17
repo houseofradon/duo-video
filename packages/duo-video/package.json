@@ -1,0 +1,70 @@
+{
+  "name": "duo-video",
+  "version": "1.0.2",
+  "description": "A react component for playing two videos synced. Finally rendered in webgl with an option to have an audiofile playing in sync aswell.",
+  "main": "build/index.js",
+  "scripts": {
+    "build:src": "babel ./src --out-dir ./build --delete-dir-on-start --copy-files",
+    "build": "NODE_ENV=production yarn build:src",
+    "start": "NODE_ENV=development yarn build:src --watch --source-maps",
+    "test": "jest --watch",
+    "eslint": "./node_modules/.bin/eslint .",
+    "flow": "./node_modules/.bin/flow"
+  },
+  "peerDependencies": {
+    "react": "^16.10.2"
+  },
+  "author": "christianperss",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.6.3",
+    "@testing-library/react": "^9.3.0",
+    "@testing-library/react-hooks": "^2.0.3",
+    "babel-jest": "^24.9.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.2",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.19.0",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "flow-bin": "^0.109.0",
+    "jest": "^24.9.0",
+    "jest-canvas-mock": "^2.1.2",
+    "react": "^16.10.2",
+    "react-test-renderer": "^16.10.2"
+  },
+  "files": [
+    "build",
+    "src",
+    "babel.config.js",
+    "package.json"
+  ],
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFiles": [
+      "./src/setupTests.js"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

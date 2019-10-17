@@ -1,0 +1,31 @@
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 100vw;
+  background: white;
+  z-index: 20;
+}
+
+.progress-bar .bar-buffer {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  text-align: right;
+  color: black;
+}
+
+.progress-bar .bar-buffer:nth-child(0) {
+  background: blue;
+}
+
+.progress-bar .bar-buffer:nth-child(1){
+  background: yellow;
+}
+
+.progress-bar .bar-buffer:nth-child(2){
+  background: pink;
+}
